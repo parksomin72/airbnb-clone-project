@@ -73,4 +73,23 @@ A successful software project requires clear role definition and collaboration. 
 
 Each role is essential to building a high-quality, scalable, and user-friendly application. Collaboration and communication among these roles are key to the project's success.
 
+## 🧩 UI Component Patterns
+
+As part of building a scalable and reusable frontend for the StayEase Airbnb Clone, we are defining a set of core UI components that will be used throughout the application. These components will follow a consistent design language and will be structured to support modular development.
+
+### 📦 Planned Components
+
+| Component        | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| **Navbar**        | A top navigation bar containing the logo, search input, and user/profile menu. It stays fixed and adapts to screen sizes. |
+| **Property Card** | A reusable card component to display a property’s image, price, location, and a short description. Used in listing views. |
+| **Footer**        | Contains links to key informational pages (About, Contact, Policies), social icons, and brand info. Responsive layout. |
+| **Search Bar**    | Allows users to input location, check-in/check-out dates, and guest count. May include autocomplete or filters. |
+| **Image Carousel**| A sliding gallery for viewing property images in the detail view. Supports swipe and click interactions. |
+| **Button**        | Reusable button component with primary, secondary, and disabled states for consistency across the UI. |
+| **Modal**         | Used for login, signup, and booking confirmations. Appears on top of other content and is dismissible. |
+| **Booking Summary Card** | Summarizes property, dates, price breakdown, and call-to-action for checkout. Appears in detail and checkout pages. |
+
+These components will be styled using a consistent design system and built for reusability, ensuring faster development and easier maintenance.
+
 
