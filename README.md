@@ -151,3 +151,109 @@ The StayEase Airbnb Clone is built using a modern full-stack architecture that e
 
 Each of these tools and frameworks contributes to building a secure, scalable, and user-friendly full-stack booking platform.
 
+## 🗃️ Database Design
+
+The StayEase Airbnb Clone requires a well-structured relational database to manage users, listings, bookings, reviews, and payments. Below is an overview of the key entities and their relationships.
+
+### 🧑 Users
+
+Represents individuals using the platform, including guests and hosts.
+
+**Key Fields:**
+- `id`: Primary key
+- `name`: Full name of the user
+- `email`: Unique identifier used for login
+- `password`: Encrypted password
+- `is_host`: Boolean flag to distinguish hosts from regular users
+
+### 🏠 Properties
+
+Represents listings posted by hosts that guests can browse and book.
+
+**Key Fields:**
+- `id`: Primary key
+- `host_id`: Foreign key to Users table
+- `title`: Short title of the property
+- `description`: Detailed information about the listing
+- `location`: Address or city where the property is located
+- `price_per_night`: Cost per night for the listing
+
+### 📅 Bookings
+
+Represents reservations made by users for specific properties.
+
+**Key Fields:**
+- `id`: Primary key
+- `user_id`: Foreign key to Users table (guest)
+- `property_id`: Foreign key to Properties table
+- `check_in_date`: Start date of the booking
+- `check_out_date`: End date of the booking
+- `total_price`: Calculated cost of the booking
+
+### 💬 Reviews
+
+Represents feedback from guests about properties they stayed in.
+
+**Key Fields:**
+- `id`: Primary key
+- `user_id`: Foreign key to Users table
+- `property_id`: Foreign key to Properties table
+- `rating`: Numerical score (e.g., 1 to 5)
+- `comment`: Textual review provided by the user
+
+### 💳 Payments
+
+Represents payment transactions for bookings made on the platform.
+
+**Key Fields:**
+- `id`: Primary key
+- `booking_id`: Foreign key to Bookings table
+- `payment_method`: e.g., credit card, PayPal
+- `amount`: Total amount paid
+- `status`: e.g., pending, completed, failed
+
+---
+
+### 🔗 Entity Relationships
+
+- A **User** can have multiple **Properties** (if they are a host).
+- A **Property** can receive many **Bookings** and **Reviews**.
+- A **Booking** is linked to one **User** (guest) and one **Property**.
+- A **Review** is made by a **User** for a specific **Property**.
+- A **Payment** is associated with a single **Booking**.
+
+This relational structure ensures data integrity and supports core platform features such as browsing properties, managing bookings, and processing secure payments.
+
+## ✨ Feature Breakdown
+
+The Airbnb Clone project replicates the core functionality of the Airbnb platform. Below are the key features that define the system and their contributions to the overall user experience:
+
+### 👤 User Management
+
+Handles user registration, login, and profile management. Users can register as either guests or hosts and access functionalities appropriate to their role, such as booking a stay or listing a property.
+
+### 🏘️ Property Management
+
+Allows hosts to create, update, and manage property listings. Hosts can specify details like the title, location, photos, availability, and price, giving guests rich information to make booking decisions.
+
+### 📆 Booking System
+
+Enables guests to book available properties for specific dates. It handles availability checks, calculates total costs, and confirms bookings, ensuring a smooth and secure reservation process.
+
+### 💳 Payment Integration
+
+Facilitates secure and reliable payments for confirmed bookings. Users can pay using supported methods, and the system tracks transaction statuses to prevent fraud or errors.
+
+### ⭐ Review & Rating System
+
+Lets guests leave reviews and ratings after completing a stay. This feature helps maintain trust within the platform by providing transparency and feedback for both guests and hosts.
+
+### 🔍 Search & Filtering
+
+Allows users to search for properties based on criteria such as location, price, and availability. Filtering improves user experience by helping them find listings that match their preferences quickly.
+
+### 📱 Responsive Design
+
+Ensures the platform works seamlessly across various devices and screen sizes. This feature improves accessibility and usability for users on mobile phones, tablets, and desktops.
+
+
