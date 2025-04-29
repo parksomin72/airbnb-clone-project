@@ -54,4 +54,23 @@ Below is a breakdown of the design properties observed and documented from the F
 
 Identifying design properties in a mockup is essential for consistency and clarity. It ensures that developers and designers are aligned, reduces guesswork in UI implementation, and keeps the product visually coherent across all screens and devices. Color palettes, typography, and spacing guidelines help create a unified user experience and contribute to a professional look and feel.
 
+## 👥 Project Roles and Responsibilities
+
+A successful software project requires clear role definition and collaboration. Below are the key roles involved in the development of the StayEase Airbnb Clone, along with their responsibilities.
+
+### 📌 Roles and Their Responsibilities
+
+| Role               | Responsibilities                                                                                       |
+|--------------------|--------------------------------------------------------------------------------------------------------|
+| **Product Owner**  | - Defines the product vision and features<br>- Prioritizes the product backlog<br>- Acts as the voice of the customer |
+| **Project Manager**| - Plans and monitors project timeline<br>- Coordinates between teams<br>- Manages risks and ensures timely delivery |
+| **Scrum Master**   | - Facilitates Agile ceremonies (daily standups, sprint reviews, etc.)<br>- Removes team blockers<br>- Ensures adherence to Agile practices |
+| **Frontend Developer** | - Implements UI based on design mockups<br>- Ensures responsive and accessible user interfaces<br>- Connects frontend to backend APIs |
+| **Backend Developer**  | - Develops and maintains server-side logic<br>- Designs and implements RESTful APIs<br>- Manages databases and authentication |
+| **Designer (UI/UX)**   | - Creates mockups and prototypes in Figma<br>- Defines design system and interaction flow<br>- Ensures visual consistency and usability |
+| **QA/Testers**         | - Writes test cases and performs manual/automated testing<br>- Ensures app functionality and performance<br>- Reports bugs and verifies fixes |
+| **DevOps Engineer**    | - Sets up CI/CD pipelines<br>- Manages deployment and infrastructure<br>- Monitors system reliability and handles rollback/recovery |
+
+Each role is essential to building a high-quality, scalable, and user-friendly application. Collaboration and communication among these roles are key to the project's success.
+
 
