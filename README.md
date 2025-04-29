@@ -109,4 +109,45 @@ To build a reliable and scalable backend for the StayEase Airbnb Clone, the back
 
 Each of these roles contributes to a stable, secure, and performant backend architecture that powers the application logic, data handling, and user management features of the StayEase Airbnb Clone.
 
+## 🧰 Technology Stack
+
+The StayEase Airbnb Clone is built using a modern full-stack architecture that emphasizes performance, scalability, and maintainability. Below is an overview of the key technologies used in this project and their roles:
+
+### Backend
+
+- **Django**: A high-level Python web framework used to build the server-side logic of the application. It provides tools for building secure, scalable RESTful APIs and includes built-in support for user authentication, admin panel, and ORM (Object-Relational Mapping).
+
+- **Django REST Framework (DRF)**: An extension to Django that simplifies the creation of RESTful APIs. It enables fast serialization of data and adds powerful features like viewsets, routers, and authentication support.
+
+- **PostgreSQL**: A robust open-source relational database used to store and manage the project’s structured data such as users, properties, bookings, and payments.
+
+### Frontend
+
+- **React**: A JavaScript library used to build dynamic and responsive user interfaces. It allows for the creation of reusable components and efficient state management on the client side.
+
+- **Tailwind CSS**: A utility-first CSS framework that enables rapid styling of UI components with consistent spacing, colors, and typography directly in HTML or JSX.
+
+### API Communication
+
+- **GraphQL (Optional / Planned)**: An API query language and runtime that provides more flexibility than REST by allowing clients to specify exactly what data they need. Useful for optimizing data retrieval for complex frontend views.
+
+- **Axios**: A promise-based HTTP client used in the frontend to make requests to the backend API endpoints for fetching or posting data.
+
+### Authentication and Security
+
+- **JWT (JSON Web Tokens)**: A secure method used for handling authentication. Tokens are issued upon user login and attached to requests for authorization.
+
+- **Django AllAuth** *(if implemented)*: A Django authentication system that supports local and social authentication providers (Google, Facebook, etc.).
+
+### DevOps and Deployment
+
+- **Docker**: Used to containerize the application and ensure it runs consistently across development and production environments.
+
+- **GitHub Actions**: CI/CD pipeline used to automate testing, linting, and deployment of the application upon push or pull requests.
+
+- **Heroku / Railway / Render (Optional)**: Cloud platforms for hosting the application, including PostgreSQL support and easy CI/CD integration.
+
+---
+
+Each of these tools and frameworks contributes to building a secure, scalable, and user-friendly full-stack booking platform.
 
