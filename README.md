@@ -256,4 +256,54 @@ Allows users to search for properties based on criteria such as location, price,
 
 Ensures the platform works seamlessly across various devices and screen sizes. This feature improves accessibility and usability for users on mobile phones, tablets, and desktops.
 
+## 🔐 API Security
 
+Securing the backend APIs of the StayEase Airbnb Clone is crucial to protect sensitive user data, prevent unauthorized access, and ensure the integrity of transactions. Below are the key security measures we plan to implement:
+
+### 🔑 Authentication
+
+We will implement secure user authentication using JSON Web Tokens (JWT). This ensures that only verified users can access protected endpoints and perform actions such as booking or listing properties.
+
+### 🛂 Authorization
+
+Role-based access control (RBAC) will be applied to restrict access to specific resources. For example, only hosts can create or modify property listings, while guests can book but not list properties. This prevents privilege escalation and enforces clear boundaries between roles.
+
+### 🚫 Rate Limiting
+
+Rate limiting will be used to prevent abuse of the API by limiting the number of requests a user or IP address can make in a given time period. This helps mitigate denial-of-service (DoS) attacks and brute-force login attempts.
+
+### 🔐 Data Encryption
+
+All data transmission will occur over HTTPS to ensure encryption in transit. Sensitive information such as passwords and payment details will be hashed or encrypted at rest to maintain data confidentiality.
+
+### 🧪 Input Validation & Sanitization
+
+All user inputs will be validated and sanitized to protect against injection attacks (e.g., SQL injection, XSS). This ensures that the backend processes only clean and expected data.
+
+### 🔍 Audit Logging
+
+Logging important actions such as login attempts, failed transactions, and admin operations helps monitor suspicious behavior and supports post-incident investigation.
+
+### 📄 Why Security Matters
+
+- **Protecting User Data:** Ensures that personal information (e.g., email, phone number, payment details) is safe from breaches.
+- **Securing Transactions:** Protects payment flows from interception, fraud, or manipulation.
+- **Building Trust:** A secure platform increases user confidence and reduces the risk of legal and reputational damage.
+
+## ⚙️ CI/CD Pipeline
+
+### What is CI/CD?
+
+CI/CD stands for Continuous Integration and Continuous Deployment/Delivery. It is a development practice that enables developers to automatically test, build, and deploy code changes quickly and reliably. Continuous Integration ensures that every change pushed to the repository is tested automatically, while Continuous Deployment allows those changes to be deployed to production or staging environments with minimal manual intervention.
+
+### Importance for the Project
+
+Implementing a CI/CD pipeline for the StayEase Airbnb Clone project ensures that our codebase remains stable and production-ready at all times. It speeds up development cycles, reduces human error, and improves collaboration among team members. Automated testing and deployment also help catch bugs early, making the development process more efficient and scalable.
+
+### Tools Used
+
+- **GitHub Actions**: To automate workflows such as running tests, linting code, and deploying updates when new code is pushed to the repository.
+- **Docker**: To containerize the application, ensuring consistency across different environments (development, staging, and production).
+- **Heroku / AWS / Render**: For deployment and hosting of the application.
+- **PostgreSQL**: Database integration and automatic migrations during deployment.
+- **Pytest / Jest**: Depending on the tech stack, these can be used for automated unit and integration testing.
