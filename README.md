@@ -92,4 +92,21 @@ As part of building a scalable and reusable frontend for the StayEase Airbnb Clo
 
 These components will be styled using a consistent design system and built for reusability, ensuring faster development and easier maintenance.
 
+## 🛠️ Backend Team Roles
+
+To build a reliable and scalable backend for the StayEase Airbnb Clone, the backend team consists of key roles that ensure the logic, data integrity, performance, and security of the system. Below are the core backend-related roles and their responsibilities:
+
+### 📌 Team Roles and Their Responsibilities
+
+| Role                      | Responsibilities                                                                                          |
+|---------------------------|-----------------------------------------------------------------------------------------------------------|
+| **Backend Developer**     | - Implements server-side application logic using frameworks (e.g., Node.js, Django)<br>- Designs and maintains RESTful APIs<br>- Integrates third-party services (e.g., payment gateways)<br>- Works with the frontend to ensure seamless data flow |
+| **Database Administrator (DBA)** | - Designs the database schema and manages relationships between entities<br>- Ensures data security, backups, and recovery<br>- Optimizes database performance and scalability<br>- Maintains user access controls |
+| **API Architect**         | - Defines API structure and endpoint conventions<br>- Ensures secure and efficient data exchange between client and server<br>- Documents API usage for frontend and external integrations |
+| **Authentication & Authorization Engineer** | - Implements secure user authentication flows (e.g., login, signup, sessions)<br>- Manages role-based access control (RBAC)<br>- Protects endpoints using industry-standard protocols (e.g., OAuth2, JWT) |
+| **Security Engineer**     | - Ensures backend is protected against threats such as SQL injection, XSS, CSRF<br>- Conducts vulnerability assessments and penetration testing<br>- Implements logging, monitoring, and incident response protocols |
+| **DevOps Engineer**       | - Builds and maintains CI/CD pipelines for backend deployments<br>- Manages infrastructure using tools like Docker, Kubernetes, or cloud platforms (AWS, GCP)<br>- Monitors uptime, logs, and system metrics for backend services |
+
+Each of these roles contributes to a stable, secure, and performant backend architecture that powers the application logic, data handling, and user management features of the StayEase Airbnb Clone.
+
 
